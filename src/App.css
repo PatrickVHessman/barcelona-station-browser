@@ -1,38 +1,40 @@
+body {
+  overflow-x: hidden
+}
+
 .App {
   text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.select__menu {
+  z-index: 1001 !important;
+  width: 100% !important;
+}
+.select__control {
+    width: 100%;
+    margin: auto;
+    margin-bottom: .75rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.controlsRow {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    background: #eee;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width: 480px) {
+.controlsRow {
+  display: block;
+}
 }

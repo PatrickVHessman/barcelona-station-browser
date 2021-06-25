@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+
 import './App.css';
+import StationList from './components/StationList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Barcelona Metro and Bike Stations</h1>
+      <p>Demo application to show proficiency with React and GraphQL. Powered by the <a
+        href="https://github.com/aalises/barcelona-urban-mobility-graphql-api"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Barcelona Urban Mobility API</a>.</p>
+      <StationList />
+      <footer>
+      Created by{" "}
+      <a
+        href="http://patrickvhessman.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Patrick Hessman
+      </a>{" "}
+      | View{" "}
+      <a
+        href=""
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        source
+      </a>
+    </footer>
     </div>
   );
 }
