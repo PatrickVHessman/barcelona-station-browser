@@ -5,12 +5,16 @@ import StationList from './components/StationList';
 function App() {
   return (
     <div className="App">
-      <h1>Barcelona Metro and Bike Stations</h1>
+      <h1>Barcelona Bike Stations</h1>
       <p>Demo application to show proficiency with React and GraphQL. Powered by the <a
         href="https://github.com/aalises/barcelona-urban-mobility-graphql-api"
         target="_blank"
         rel="noopener noreferrer"
-      >Barcelona Urban Mobility API</a>.</p>
+      >Barcelona Urban Mobility API</a> and <a
+        href="https://leafletjs.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Leaflet</a>.</p>
       <StationList />
       <footer>
       Created by{" "}
@@ -23,7 +27,7 @@ function App() {
       </a>{" "}
       | View{" "}
       <a
-        href=""
+        href="https://github.com/PatrickVHessman/barcelona-station-browser"
         target="_blank"
         rel="noopener noreferrer"
       >
