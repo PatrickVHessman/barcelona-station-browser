@@ -5,7 +5,7 @@ import StationList from './components/StationList';
 function App() {
   return (
     <div className="App">
-      <h1>Barcelona Bike Stations</h1>
+      <h1>Barcelona Bike Station Browser</h1>
       <p>Demo application to show proficiency with React and GraphQL. Powered by the <a
         href="https://github.com/aalises/barcelona-urban-mobility-graphql-api"
         target="_blank"
